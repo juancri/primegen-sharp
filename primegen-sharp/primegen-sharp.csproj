@@ -36,4 +36,10 @@
     <Compile Include="PrimegenStruct.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <None Include="..\externals\primegen\libprimegen.so">
+      <Link>libprimegen.so</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
 </Project>
